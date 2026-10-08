@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography &amp; Layout｜Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-sub">
+
+  <header class="site-header">
+    <a class="site-logo" href="index.html" aria-label="回首頁"><img src="images/logo/logo-header.jpg" alt="Portfolio"></a>
+  </header>
+
+  <main class="section">
+    <div class="page-title">
+      <img src="images/hand/typography.png" alt="Typography &amp; Layout">
+      <p class="page-title__caption">根據詞彙旨意，轉化為對應視覺意境。</p>
+    </div>
+
+    <div class="typo-grid">
+      <figure class="typo typo--wangyang"><img src="images/typography/wangyang.png" alt="汪洋 文字造型" loading="lazy"></figure>
+
+      <!-- 說明文字：Figma 上是暫放文字，請換成你的作品說明 -->
+      <div class="typo-text">
+        <h2>字體設計-藝術型</h2>
+        <p>字體設計往往牽動人對詞彙與其意境之視覺印象與概念，又可被分為傳達型與藝術型兩種型態
+          傳達型多用於正式文件及訊息等需清晰傳達之狀況；而
+          藝術型則多用於創作、廣告宣傳、任何需要表達請感連結之情況。
+          而在海報、招牌等設計物使用中，多以藝術型做為表現。
+        以下，我根據幾個詞彙透過實驗性的方式除了在電腦內、也透過實際物件製作字體並拍攝，來創作
+      其字體之視覺意象。</p>
+      </div>
+
+      <figure class="typo typo--confusion"><img src="images/typography/confusion.png" alt="confusion 實驗字體" loading="lazy"></figure>
+      <figure class="typo typo--exhausted"><img src="images/typography/exhausted.png" alt="exhausted 實驗字體" loading="lazy"></figure>
+
+      <!-- 待補：野人咖啡文字造型 → 把圖片存成 images/typography/coffee.png -->
+      <figure class="typo typo--coffee">
+        <img src="images/typography/coffee.png" alt="野人咖啡 文字造型" loading="lazy" onerror="this.parentNode.classList.add('is-missing')">
+        <figcaption class="placeholder">野人咖啡 文字造型<br><small>images/typography/coffee.png</small></figcaption>
+      </figure>
+
+      <figure class="typo typo--feng"><img src="images/typography/feng.png" alt="瘋 文字造型" loading="lazy"></figure>
+
+      <!-- 待補：夢遊 文字造型期末 → 把圖片存成 images/typography/dream.png -->
+      <figure class="typo typo--dream">
+        <img src="images/typography/dream.png" alt="夢遊 文字造型" loading="lazy" onerror="this.parentNode.classList.add('is-missing')">
+        <figcaption class="placeholder">夢遊 文字造型期末<br><small>images/typography/dream.png</small></figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <nav class="pager" aria-label="頁面切換">
+    <a class="pager__link" href="about.html"><span class="pager__hint">← 上一頁</span><img src="images/hand/about-me.png" alt="About ME"></a>
+    <a class="pager__link pager__link--next" href="web.html"><span class="pager__hint">下一頁 →</span><img src="images/hand/web-design.png" alt="Web Design"></a>
+  </nav>
+</body>
+</html>

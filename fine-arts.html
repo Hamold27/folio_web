@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fine Arts｜Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-sub">
+
+  <header class="site-header">
+    <a class="site-logo" href="index.html" aria-label="回首頁"><img src="images/logo/logo-header.jpg" alt="Portfolio"></a>
+  </header>
+
+  <main class="section section--wide">
+    <div class="page-title">
+      <img src="images/hand/fine-arts.png" alt="Fine Arts">
+      <p class="page-title__caption">水彩・炭筆素描・廣告顏料</p>
+    </div>
+
+    <!-- 分類篩選：data-filter 對應 js/artworks.js 裡的 category -->
+    <div class="filters" role="tablist" aria-label="作品分類">
+      <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">全部 <span class="filter__count"></span></button>
+      <button class="filter" data-filter="watercolor" role="tab" aria-selected="false">水彩 <span class="filter__count"></span></button>
+      <button class="filter" data-filter="sketch" role="tab" aria-selected="false">炭筆素描 <span class="filter__count"></span></button>
+      <button class="filter" data-filter="gouache" role="tab" aria-selected="false">廣告顏料 <span class="filter__count"></span></button>
+    </div>
+
+    <!-- 瀑布流：內容由 js/gallery.js 依照 js/artworks.js 自動產生 -->
+    <div class="masonry" id="masonry"></div>
+  </main>
+
+  <nav class="pager" aria-label="頁面切換">
+    <a class="pager__link" href="packaging.html"><span class="pager__hint">← 上一頁</span><img src="images/hand/packaging.png" alt="Packaging &amp; Binding"></a>
+    <a class="pager__link pager__link--next" href="index.html"><span class="pager__hint">回首頁 →</span></a>
+  </nav>
+
+  <script src="js/artworks.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

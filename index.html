@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio｜張詠晴 CHANG, YUNG CHING</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-home">
+
+  <main class="home">
+    <!-- ============ 中央 Portfolio Logo（眼睛會跟著滑鼠） ============ -->
+    <div class="home-logo" id="homeLogo" aria-label="Portfolio">
+      <img class="home-logo__base" src="images/logo/logo-home.jpg" alt="Portfolio">
+      <!-- 兩個眼睛：位置以 % 對齊 logo 圖片，換 logo 圖時要一起調整 css 裡的 .eye--1 / .eye--2 -->
+      <span class="eye eye--1"><img class="eye__pupil" src="images/logo/pupil1.png" alt=""></span>
+      <span class="eye eye--2"><img class="eye__pupil" src="images/logo/pupil2.png" alt=""></span>
+    </div>
+
+    <!-- ============ 手寫字選單（PNG 放在 images/hand/，換檔名即可） ============ -->
+    <nav class="home-nav" aria-label="作品分類">
+      <a class="hand-link hand-link--tl" href="typography.html">
+        <img src="images/hand/typography.png" alt="Typography &amp; Layout">
+      </a>
+      <a class="hand-link hand-link--tr" href="packaging.html">
+        <img src="images/hand/packaging.png" alt="Packaging &amp; Binding">
+      </a>
+      <a class="hand-link hand-link--center" href="about.html">
+        <img src="images/hand/about-me.png" alt="About ME">
+      </a>
+      <a class="hand-link hand-link--bl" href="web.html">
+        <img src="images/hand/web-design.png" alt="Web Design">
+      </a>
+      <a class="hand-link hand-link--br" href="fine-arts.html">
+        <img src="images/hand/fine-arts.png" alt="Fine Arts">
+      </a>
+    </nav>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
